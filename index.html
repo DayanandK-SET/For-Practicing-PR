@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Demo App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Mini Demo App</h1>
+    <p>HTML + CSS + JS Project</p>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h2>User Input</h2>
+        <input type="text" id="nameInput" placeholder="Enter your name">
+        <button onclick="showGreeting()">Submit</button>
+        <p id="greeting"></p>
+    </div>
+
+    <div class="card">
+        <h2>Counter</h2>
+        <p id="count">0</p>
+        <button onclick="increment()">+</button>
+        <button onclick="decrement()">-</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
