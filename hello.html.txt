@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        nav {
+            background: #555;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+        button {
+            padding: 10px 15px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Demo Website</h1>
+    <p>Simple HTML + CSS + JS Example</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="container">
+    <div class="card">
+        <h2>Welcome</h2>
+        <p>This is a simple demo page to help you understand HTML structure.</p>
+    </div>
+
+    <div class="card">
+        <h2>Click Button</h2>
+        <p id="message">Click the button to change this text.</p>
+        <button onclick="changeText()">Click Me</button>
+    </div>
+</div>
+
+<script>
+    function changeText() {
+        document.getElementById("message").innerText = "Text changed successfully!";
+    }
+</script>
+
+</body>
+</html>
